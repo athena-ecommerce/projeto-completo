@@ -2,6 +2,7 @@ services:
   - type: web
     name: athena-backend
     runtime: docker
+    plan: free
     dockerfilePath: ./backend/Dockerfile.backend
     dockerContext: ./backend
     envVars:
@@ -50,6 +51,7 @@ services:
   - type: web
     name: athena-frontend
     runtime: docker
+    plan: free
     dockerfilePath: ./website/Dockerfile.frontend
     dockerContext: ./website
     envVars:
